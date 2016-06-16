@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BRAND GUIDLINES</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.css" />
+	<link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script src="slick.min.js"></script>
+	<link rel="stylesheet" href="hover.css">
+	
+
+</head>
+<body>
+
+	<div id="fullpage">
+
+		<!-- <div class="section">
+			 <div class="pageone"> 
+			 <img id="hpic" src="img/home.jpg"> 
+			 <img id="tit" src="img/tiff.png">
+			 <hr>
+			 <h1>Branding Guidlines</h1>
+			 </div>
+    	</div> -->
+
+		<div class="section">
+			<img id="typo" src="img/copy.jpg">
+				<div class="pagetwo">
+				<img id="hey" src="img/nay.png">
+				<img id="hi" src="img/co.png">
+				<img id="hello" src="img/koko.png">
+				<img id="xx" src="img/x.png">
+				<button id="yo">Typography</button>
+				<button id="yozza">Co.</button> 
+				<button id="yello">Punctuation</button>
+				</div>
+		</div>
+
+    	<div class="section">
+    		<img id="swatch" src="img/boi.jpg">
+    			<div class="flickity">
+		    		<img id="swatch1" src="img/swatch1.png"> 
+		    		<img id="swatch2" src="img/swatch2.png"> 
+		    		<img id="swatch3" src="img/swatch3.png">
+    			</div>
+      	</div>
+
+   		<div class="section">
+   			<div class="pagefour">
+   				<img id="eleg" src="img/a.jpg">
+   				<img id="blac" src="img/d.jpg">
+   				<img id="glam" src="img/c.jpg">
+   				<img id="ima1" src="img/elg.png">
+   				<img id="ima2" src="img/bw.png">
+   				<img id="ima3" src="img/glm.png">
+   			</div>
+   	   	</div>
+   		
+
+   		<!-- <div class="section">
+   			<div class="pagefive">
+   			<img id="bow" src="img/gift.jpg">
+   			</div>
+   		</div> -->
+
+	</div>
+
+	
+	<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.js"></script>
+	<script src="flickity.min.js"></script>
+
+
+
+<script>
+// -----------snaaaaaaapscroll------------------
+
+	$(document).ready(function() {
+    $('#fullpage').fullpage();
+});
+
+
+// ----------image page hover-----------------------										
+
+	$(document).ready(function(){
+	
+	$( "#eleg, #ima1" ).mouseover(function(){
+		$(this).css('opacity', '.3');
+	$('#ima1').fadeIn(500);
+	});
+
+	$( "#eleg, #ima1" ).mouseleave(function(){
+  		$(this).css('opacity', '1');
+  	$('#ima1').fadeOut(500);				
+	});
+});
+
+	$(document).ready(function(){
+	
+	$( "#blac, #ima2" ).mouseover(function(){
+		$(this).css('opacity', '.3');
+	$('#ima2').fadeIn(500);
+	});
+
+	$( "#blac, #ima2" ).mouseleave(function(){
+  		$(this).css('opacity', '1');
+  	$('#ima2').fadeOut(500);
+	});
+});
+
+	$(document).ready(function(){
+	
+	$( "#glam, #ima3" ).mouseover(function(){
+		$(this).css('opacity', '.3');
+	$('#ima3').fadeIn(500);
+	});
+
+	$( "#glam, #ima3" ).mouseleave(function(){
+  		$(this).css('opacity', '1');
+  	$('#ima3').fadeOut(500);
+  	});
+});
+
+//----------- flickity slide -----------------------
+
+	var elem = document.querySelector('.flickity');
+					var flkty = new Flickity( elem, {
+		  			contain: true,
+		  			wrapAround: true
+					});
+
+
+//-------------typography appear--------------------
+
+$(document).ready(function(){
+	
+	$( "#yo" ).click(function(){
+	$("#hey").show();
+	$("#xx").show();
+	});
+
+	$("#xx").click(function(){
+    $("#hey").fadeOut();
+    $("#xx").fadeOut();
+});
+});
+
+$(document).ready(function(){
+
+	$( "#yozza" ).click(function(){
+	$('#hi').show();
+	$("#xx").show();
+	});
+
+	$("#xx").click(function(){
+    $("#hi").fadeOut();
+    $("#xx").fadeOut();
+});
+});
+
+$(document).ready(function(){
+	
+	$( "#yello" ).click(function(){
+	$('#hello').show();
+	$("#xx").show();
+	});
+
+	$("#xx").click(function(){
+    $("#hello").fadeOut();
+    $("#xx").fadeOut();
+});
+});
+
+	
+</script>
+	
+</body>
+</html>
